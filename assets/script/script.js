@@ -66,7 +66,7 @@ mobileNavbar.init();
 
 // Função de alerta para redirecionamento aos modelos 3D
 function verModelos() {
-    document.querySelector('#galeria-zoolitos').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#exposicao').scrollIntoView({ behavior: 'smooth' });
   }
 
 // Função geral para animar elementos ao rolar a página

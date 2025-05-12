@@ -16,10 +16,18 @@ body {
   color: #333;
   min-height: 100vh;
 }
+
+h2{
+  color: #6f5c44;
+}
+
+p{
+  color: #6f5c44;
+}
  
 /* TOPO COM LOGO E MENU */
 .topbar {
-  background-color: rgb(252, 252, 252) ; /* #d8ddd6*/
+  background-color: rgb(252, 252, 252) ; /* #d8ddd6 #C7BBAD*/
   border-bottom: 1px solid #ddd;
 }
  
@@ -46,7 +54,7 @@ body {
 }
  
 .navbar a {
-  color: #003366;
+  color: #67553e;
   padding: 10px;
   text-decoration: none;
   font-weight: 500;
@@ -123,7 +131,7 @@ body {
   font-size: 1rem;
   background-color: white;
   color: white;
-  background-color: #003366;
+  background-color: #67553e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -131,7 +139,7 @@ body {
 }
  
 .text-content button:hover {
-  background-color: #065db4;
+  background-color: #8f7451;
 }
  
 /* SEÇÃO HERO */
@@ -163,6 +171,7 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #6f5c44;
 }
  
 .content-block {
@@ -204,7 +213,7 @@ body {
  
 /* SEÇÃO EXPOSIÇÃO */
 .exposicao-section {
-  background-color: #f6f6f6;
+  background-color: #f9f3ec;
   padding: 60px 20px;
   text-align: center;
 }
@@ -307,7 +316,7 @@ body {
 .carrossel-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #f9f3ec;
 }
  
 .carrossel-container {
@@ -624,7 +633,7 @@ body {
   display: none;
   width: 50px;
   height: 50px;
-  background-color: #1e90ff;
+  background-color: #a79278;
   color: white;
   font-size: 20px;
   border: none;
@@ -636,7 +645,7 @@ body {
 }
  
 #btnTopo:hover {
-  background-color: #0d6efd;
+  background-color: #ceb290;
   transform: scale(1.1);
 }
  
@@ -651,19 +660,19 @@ body {
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: #1e90ff; /* azul do thumb */
+  background-color: #a79278; /* azul do thumb */
   border-radius: 10px;
   border: none;
 }
  
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #0d6efd;
+  background-color: #a79278;
 }
  
 /* Firefox */
 * {
   scrollbar-width: thin; /* deixa bem fininha */
-  scrollbar-color: #1e90ff transparent; /* thumb azul, fundo invisível */
+  scrollbar-color: #a79278 transparent; /* thumb azul, fundo invisível */
 }
 
 /* Fundo escuro (atrás do menu) */
@@ -781,7 +790,7 @@ body {
     padding: 10px 20px;
     margin: 10px auto;
     font-size: 1.2rem;
-    color: #333;
+    color: #67553e;
     font-weight: 500;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
@@ -798,7 +807,7 @@ body {
 
   .nav-list li a:hover {
     background-color: #f0f0f0;
-    color: #0077cc;
+    color: #463e33;
   }
 }
 
