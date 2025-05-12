@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressões da Temporalidade</title>
+  <link rel="shortcut icon" href="./assets/img/favicon-semanacultural.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <!-- TOPO COM LOGO E MENU --> 
+    <header class="topbar">
+      <div class="container">
+        <a href="index.html">
+          <img src="./assets/logos/logo2.png" alt="Sesc Logo" class="logo" />
+        </a>
+        <nav class="navbar">
+          <!-- Overlay -->
+          <div class="menu-overlay"></div>
+    
+          <!-- Menu -->
+          <ul class="nav-list">
+            <li><a href="#zoolito" id="scroll-link">Zoólitos</a></li>
+            <li><a href="#projeto" id="scroll-link">Projeto</a></li>
+            <li><a href="#exposicao" id="scroll-link">Exposição</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+          <div class="line1 line"></div>
+          <div class="line2 line"></div>
+          <div class="line3 line"></div>
+        </div>
+      </div>
+    </header>
+    
+ 
+<!-- BANNER COM VÍDEO DE FUNDO -->
+<section class="hero-banner">
+    <video autoplay muted loop class="banner-video">
+      <source src="./assets/video/videobanner2.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos em HTML5.
+    </video>
+ 
+    <div class="banner-content">
+      <div class="text-content">
+        <h1>Explore os <br>Zoólito</h1>
+        <p>Arte Pré-Histórica em 3D</p>
+        <button onclick="verModelos()">Ver Modelos 3D</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- SECTION O QUE É ZOOLITO -->
+  <main>
+    <section id="zoolito" class="section reveal">
+      <h2>O que é Zoólito?</h2>
+      <div class="content-block">
+        <img src="./assets/img/oquezoolito.png" class="reveal" alt="Zoolito 1" />
+        <p>
+          Os zoólitos são esculturas polidas em rochas, construídas pelos sambaquieiros e que apresentam formas de animais, especialmente de peixes, mamíferos marinhos e aves, bem como de animais terrestres. Embora seja menos frequente, também é possível encontrar esculturas polidas em ossos, as quais são chamadas de zoósteos.
+Alguns zoólitos eram utilizados em contextos funerários, outros como bastões e até mesmo como adornos. Os arqueólogos defendem que os zoólitos eram artefatos raros, cuja a posse evidenciaria divisões sociais hierarquizadas.
+        </p>
+      </div>
+    </section>
+ 
+    <!-- SECTION PROJETO -->
+    <section id="projeto" class="section reveal-scroll">
+      <h2>Como as peças desta exposição foram construídas?</h2>
+      <div class="content-block">
+        <p>
+          A exposição é resultado de um projeto interdisciplinar de ensino e aprendizagem que mobiliza conhecimentos nas áreas de História, Tecnologia, Arte e Arqueologia. Neste projeto, os(as) estudantes criaram modelos 3D de zoólitos utilizando o Blender, um software livre de modelagem digital. As peças foram impressas em 3D e, a partir delas, foram confeccionados moldes de silicone para criação de réplicas em cimento e gesso para que ficassem mais semelhantes às originais em termos de textura e peso.
+Além da exposição física, os(as) visitantes podem ter acesso à exposição virtual e ao documentário sobre o projeto.
+        </p>
+        <img src="./assets/img/zoolitopeixe.png" class="reveal-right" alt="Zoolito 2" />
+      </div>
+    </section>
+ 
+    <!-- SECTION VIAGEM -->
+    <section class="carrossel-section">
+        <h2>Viagem para Curitiba</h2>
+        <div class="carrossel-container">
+          <button class="carrossel-btn left" onclick="moverCarrossel(-1)">&#10094;</button>
+         
+          <div class="carrossel-track" id="carrosselTrack">
+            <div class="carrossel-item">
+              <img src="./assets/img/bannerVertical.jpeg" alt="Zoolito 1">
+            </div>
+            <div class="carrossel-item">
+              <img src="./assets/img/bannerVertical2.jpeg" alt="Zoolito 2">
+            </div>
+            <div class="carrossel-item">
+              <img src="./assets/img/bannerVertical3.jpeg" alt="Zoolito 3">
+            </div>
+              <div class="carrossel-item">
+                <img src="./assets/img/bannerVertical5.jpeg" alt="Zoolito 3">
+              </div>
+          </div>
+          <button class="carrossel-btn right" onclick="moverCarrossel(1)">&#10095;</button>
+        </div>
+      </section>
+ 
+      <!-- SECTION GALERIA -->
+      <section id="galeria-zoolitos" class="section reveal-up">
+        <h2>Galeria de Zoólitos</h2>
+        <div class="galeria" id="galeria">
+          <img src="./assets/img/foto.jpeg" alt="Zoolito 1">
+          <img src="./assets/img/foto1.jpeg" alt="Zoolito 2">
+          <img src="./assets/img/foto2.jpeg" alt="Zoolito 3">
+          <img src="./assets/img/foto3.jpeg" alt="Zoolito 4">
+          <img src="./assets/img/foto4.jpeg" alt="Zoolito 4">
+          <img src="./assets/img/foto5.jpeg" alt="Zoolito 4">
+          <img src="./assets/img/foto7.jpeg" alt="Zoolito 4">
+          <img src="./assets/img/foto8.jpeg" alt="Zoolito 4">
+        </div>  
+      </section>
+ 
+   <div id="zoomModal" class="zoom-modal">
+     <span class="close">&times;</span>
+     <img alt="" class="zoom-modal-content" id="zoomImg">
+     <div class="nav-buttons">
+       <button class="nav-btn left" id="btnAnterior">&#10094;</button>
+       <button class="nav-btn right" id="btnProximo">&#10095;</button>
+     </div>
+      </div>
+ 
+      <!-- SECTION VIDEO DA CONTINUACAO -->
+      <section id="projeto-video" class="section reveal-up">
+        <h2>Continuação do Projeto</h2>
+        <div class="video-block">
+          <video controls>
+                <source src="./assets/video/continuacaovideo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+     
+    <!-- SEÇÃO EXPOSIÇÃO -->
+<section id="exposicao" class="exposicao-section reveal-up">
+    <h2>Zoólitos em Exposição</h2>
+    <div class="grid-exposicao">
+     <!-- Zoolito 1 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoolito - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/8d90cfa0ff8348f9a7b30368cc7eb945/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 2 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoólito 4837 - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/ab3d9213c8074d8d85a546b7b8a32e2f/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 3 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoósteo Albatroz Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/026f21224d0d467aae12fc7923b32318/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 4 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoólito 7805 - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/efda4d9fe4c2466abcd14ce83162f577/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 5 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoólito 4335 - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/932e2a8b9fc540c1ae376997b48d8289/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 6 -->
+<div class="zoolito-card">
+  <iframe title="Zoólito AMA000024- Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/a796d78e52574095a95320271748f05d/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 7 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoólito 7576 - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/925e6186d66548edad0c6155606162e6/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 8 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoólito 4836 - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/91783a749c2e41509fcf5f82c595855f/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 9 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoolito 4333 - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/f0ef50d1a2514815a94c5cc2ab83a58a/embed">
+  </iframe>
+</div>
+
+<!-- Zoolito 10 -->
+<div class="zoolito-card">
+  <iframe title="Modelo 3D Zoólito 4214 - Sesc e Senac Matinhos" frameborder="0"
+    allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
+    src="https://sketchfab.com/models/379df4f236e34ccca1ab5917b625da8c/embed">
+  </iframe>
+</div>
+  </div>
+  </section>
+</main>
+
+<button id="btnTopo"><i class="fas fa-arrow-up"></i></button>
+ 
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <img src="./assets/logos/logo2.png" alt="Logo" class="footer-logo"/>
+ 
+    <!-- <div class="footer-info">
+      <p>Email: contato@zoolitos.com</p>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>Endereço: Av. dos Zoolitos</p>
+    </div> -->
+  </div>
+ 
+  <p class="footer-copy">&copy; 2025 Zoolitos. Todos os direitos reservados.</p>
+</footer>
+
+  <script src="./assets/script/script.js"></script>
+</body>
+</html>
