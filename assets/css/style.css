@@ -823,37 +823,82 @@ p{
   }
 }
 
- .banner-creditos {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 20px;
-    background: linear-gradient(to right, #ffffff, #ffffff);
+.galeria-imagens {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .galeria-imagens img {
+    width: 100%;
     border-radius: 12px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .galeria-imagens img:hover {
+    transform: scale(1.02);
+  }
+
+  @media (min-width: 600px) {
+    .galeria-imagens {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .galeria-imagens {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+.titulo-creditos {
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #6f5c44;
+    font-weight: bold;
+  }
+
+  .grupo-creditos {
+    background-color: #f9f3ec;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+  }
+
+  .creditos-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .credito-nome {
-    display: inline-block;
     background-color: #ffffff;
-    padding: 10px 20px;
-    margin-right: 15px;
-    border-radius: 25px;
-    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
     color: #333;
-    scroll-snap-align: start;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
   }
 
   .credito-nome:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    background-color: #f1e3d2;
   }
 
-  .titulo-creditos {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #6f5c44;
-    padding: 20px;
+  @media (min-width: 600px) {
+    .creditos-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .creditos-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
