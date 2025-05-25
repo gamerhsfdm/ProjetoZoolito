@@ -243,31 +243,6 @@ p{
   right: 15px;
 }
 
-/* Dots sobre a imagem */
-.carousel-dots {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-}
-
-.carousel-dots button {
-  border: none;
-  background: rgba(255,255,255,0.6);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.carousel-dots button.active {
-  background: rgba(255,255,255,0.9);
-}
-
 /* Responsivo */
 @media (max-width: 768px) {
   #carrossel-imagens h2 {
