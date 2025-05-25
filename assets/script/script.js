@@ -1,3 +1,50 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-button.next');
+    const prevButton = document.querySelector('.carousel-button.prev');
+    const dotsNav = document.querySelector('.carousel-dots');
+
+    let currentSlide = 0;
+
+    // Criar dots dinamicamente
+    slides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      if (index === 0) dot.classList.add('active');
+      dotsNav.appendChild(dot);
+    });
+
+    const dots = Array.from(dotsNav.children);
+
+    function updateCarousel() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[currentSlide].classList.add('active');
+    }
+
+    nextButton.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        updateCarousel();
+      });
+    });
+
+    window.addEventListener('resize', updateCarousel);
+
+    updateCarousel(); // Garantir que começa ajustado
+  });
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks, overlay) {
     this.mobileMenu = document.querySelector(mobileMenu);

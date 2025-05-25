@@ -181,6 +181,107 @@ p{
   justify-content: center;
 }
 
+#carrossel-imagens {
+  text-align: center;
+  padding: 50px 0;
+  background: none; /* Sem fundo */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* ✅ Mantém padrão de vídeo/imagem widescreen */
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+
+/* Botões de navegação */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.3);
+  border: none;
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.carousel-button:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.carousel-button.prev {
+  left: 15px;
+}
+
+.carousel-button.next {
+  right: 15px;
+}
+
+/* Dots sobre a imagem */
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-dots button {
+  border: none;
+  background: rgba(255,255,255,0.6);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-dots button.active {
+  background: rgba(255,255,255,0.9);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #carrossel-imagens h2 {
+    font-size: 1.8em;
+  }
+  
+  .carousel-button {
+    font-size: 1.5em;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
 /* Em telas menores, como tablets */
 @media (max-width: 900px) {
   .content-block {
@@ -365,24 +466,52 @@ p{
   right: 10px;
 }
  
-.video-block {
-  max-width: 800px;
-  margin: 0 auto;
+/* Estilo geral */
+#projeto-video {
   text-align: center;
+  padding: 50px 20px;
 }
- 
-.video-block video {
+
+#projeto-video h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Container do vídeo */
+.video-block {
+  display: flex;
+  justify-content: center;
+}
+
+.video-block iframe {
   width: 100%;
-  max-height: 500px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: none;
 }
- 
-.video-block p {
-  font-size: 1.2rem;
-  color: #333;
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  #projeto-video {
+    padding: 30px 10px;
+  }
+
+  #projeto-video h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
 }
+
+@media (max-width: 480px) {
+  #projeto-video h2 {
+    font-size: 1.2em;
+  }
+}
+
  
 .galeria {
   display: grid;
