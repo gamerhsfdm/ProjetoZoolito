@@ -6,20 +6,17 @@
   <title>Impressões da Temporalidade</title>
   <link rel="shortcut icon" href="./assets/img/favicon-semanacultural.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <!-- TOPO COM LOGO E MENU --> 
     <header class="topbar">
       <div class="container">
         <a href="index.html">
           <img src="./assets/logos/logo-pro01.png" alt="Sesc Logo" class="logo" />
         </a>
         <nav class="navbar">
-          <!-- Overlay -->
           <div class="menu-overlay"></div>
-    
-            <!-- Menu -->
           <ul class="nav-list">
             <li><a href="#zoolito" id="scroll-link">Zoólitos</a></li>
             <li><a href="#projeto" id="scroll-link">Projeto</a></li>
@@ -33,9 +30,7 @@
         </div>
       </div>
     </header>
-    
- 
-<!-- BANNER COM VÍDEO DE FUNDO -->
+
 <section class="hero-banner">
     <video autoplay muted loop class="banner-video">
       <source src="./assets/video/videobanner2.mp4" type="video/mp4" />
@@ -72,7 +67,6 @@
       </div>
     </section>
   
-  <!-- SECTION O QUE É ZOOLITO -->
   <main>
     <section id="zoolito" class="section reveal">
       <h2>O que são Zoólitos?</h2>
@@ -85,7 +79,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
       </div>
     </section>
  
-   <!-- SECTION PROJETO -->
 <section id="projeto" class="section reveal-scroll">
   <h2>Como as peças desta exposição foram construídas?</h2>
   
@@ -96,71 +89,61 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
     </p>
   </div>
 
-  <section id="carrossel-imagens" class="section reveal-up">
-  <div class="carousel">
-    <div class="carousel-track">
-      <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs1.jpg" alt="Imagem 1">
-      </div>
-      <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs2.jpg" alt="Imagem 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs3.jpg" alt="Imagem 3">
-      </div>
-       <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs4.jpg" alt="Imagem 3">
-      </div>
-       <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs5.jpg" alt="Imagem 3">
-      </div>
-       <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs6.jpg" alt="Imagem 3">
-      </div>
-       <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs7.jpg" alt="Imagem 3">
-      </div>
-       <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs8.jpg" alt="Imagem 3">
-      </div>
-       <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs9.jpg" alt="Imagem 3">
-      </div>
-       <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs10.jpg" alt="Imagem 3">
-      </div>
-             <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs11.jpg" alt="Imagem 3">
-      </div>
-             <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs12.jpg" alt="Imagem 3">
-      </div>
-             <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs13.jpg" alt="Imagem 3">
-      </div>
-             <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs14.jpg" alt="Imagem 3">
-      </div>
-             <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs15.jpg" alt="Imagem 3">
-      </div>
-             <div class="carousel-slide">
-        <img src="./assets/imgs-crs/crs16.jpg" alt="Imagem 3">
-      </div>
-        <div class="carousel-slide">
-        <img src="./assets/imgs-crs/csr17.jpg" alt="Imagem 3">
-      </div>
-             <div class="carousel-slide">
-        <img src="./assets/imgs-crs/csr18.JPG" alt="Imagem 3">
-      </div>>
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/imgs-crs/crs1.jpg" class="d-block w-100" alt="...">
     </div>
-    <button class="carousel-button prev">&#10094;</button>
-    <button class="carousel-button next">&#10095;</button>
-    <div class="carousel-dots"></div>
+    <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs4.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs5.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs6.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs7.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs8.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs9.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs10.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs11.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs12.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs13.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs15.jpg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="./assets/imgs-crs/crs16.jpg" class="d-block w-100" alt="...">
+    </div>
   </div>
-</section>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-  <!-- Galeria de imagens -->
   <div class="galeria-imagens">
     <img src="./assets/img/tubarao.jpg" alt="Zoolito 1">
     <img src="./assets/img/ct01.png" alt="Zoolito 2">
@@ -170,8 +153,7 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
     <img src="./assets/img/ct06.jpg" alt="Zoolito 3">
   </div>
 </section>
- 
-    <!-- SECTION VIAGEM -->
+
     <section class="carrossel-section">
         <h2>Visita à reserva técnica do Museu de Arqueologia e Etnologia da UFPR</h2>
         <div class="carrossel-container">
@@ -194,8 +176,7 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
           <button class="carrossel-btn right" onclick="moverCarrossel(1)">&#10095;</button>
         </div>
       </section>
- 
-      <!-- SECTION GALERIA -->
+
       <section id="galeria-zoolitos" class="section reveal-up">
         <h2>Galeria de Zoólitos do MAE/UFPR</h2>
         <div class="galeria" id="galeria">
@@ -218,8 +199,7 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
        <button class="nav-btn right" id="btnProximo">&#10095;</button>
      </div>
       </div>
- 
-      <!-- SECTION VIDEO DA CONTINUACAO -->
+
       <section id="projeto-video" class="section reveal-up">
         <h2>Documentário Impressões da Temporalidade</h2>
       <div class="video-block">
@@ -230,12 +210,9 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
       </div>
   </section>
 
-     
-    <!-- SEÇÃO EXPOSIÇÃO -->
 <section id="exposicao" class="exposicao-section reveal-up">
     <h2>Zoólitos 3D em Exposição</h2>
     <div class="grid-exposicao">
-     <!-- Zoolito 1 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoolito - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -243,7 +220,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 2 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoólito 4837 - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -251,7 +227,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 3 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoósteo Albatroz Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -259,7 +234,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 4 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoólito 7805 - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -267,7 +241,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 5 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoólito 4335 - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -275,7 +248,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 6 -->
 <div class="zoolito-card">
   <iframe title="Zoólito AMA000024- Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -283,7 +255,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 7 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoólito 7576 - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -291,7 +262,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 8 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoólito 4836 - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -299,7 +269,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 9 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoolito 4333 - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -307,7 +276,6 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </iframe>
 </div>
 
-<!-- Zoolito 10 -->
 <div class="zoolito-card">
   <iframe title="Modelo 3D Zoólito 4214 - Sesc e Senac Matinhos" frameborder="0"
     allow="autoplay; fullscreen; xr-spatial-tracking; accelerometer"
@@ -365,21 +333,15 @@ Alguns zoólitos eram utilizados em contextos funerários, outros como bastões 
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-content">
     <img src="./assets/logos/logo2.png" alt="Logo" class="footer-logo"/>
- 
-    <!-- <div class="footer-info">
-      <p>Email: contato@zoolitos.com</p>
-      <p>Telefone: (11) 99999-9999</p>
-      <p>Endereço: Av. dos Zoolitos</p>
-    </div> -->
   </div>
  
   <p class="footer-copy">&copy; 2025 Zoolitos. Todos os direitos reservados.</p>
 </footer>
 
   <script src="./assets/script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
