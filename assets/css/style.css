@@ -943,3 +943,44 @@ p {
 .nav:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
+.ent-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  gap: 20px;
+  justify-items: center;
+}
+
+.ent-galeria img {
+  width: 100%;
+  max-width: 300px;  /* largura máxima */
+  height: 300px;     /* altura fixa igual à largura → quadrado */
+  object-fit: cover; /* corta e centraliza sem distorcer */
+  border-radius: 15px; /* bordas arredondadas estilo card */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ent-galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .ent-galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .ent-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ent-galeria {
+    grid-template-columns: 1fr;
+  }
+}
