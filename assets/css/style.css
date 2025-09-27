@@ -946,17 +946,17 @@ p {
 
 .ent-galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   justify-items: center;
 }
 
 .ent-galeria img {
   width: 100%;
-  max-width: 300px;  /* largura máxima */
-  height: 300px;     /* altura fixa igual à largura → quadrado */
-  object-fit: cover; /* corta e centraliza sem distorcer */
-  border-radius: 15px; /* bordas arredondadas estilo card */
+  max-width: 350px;  
+  height: 350px;    
+  object-fit: cover; 
+  border-radius: 12px; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -966,7 +966,6 @@ p {
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Responsividade */
 @media (max-width: 1200px) {
   .ent-galeria {
     grid-template-columns: repeat(3, 1fr);

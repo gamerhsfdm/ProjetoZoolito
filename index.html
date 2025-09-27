@@ -163,7 +163,7 @@
           </button>
         </div>
 
-        <div class="galeria-imagens">
+        <div class="galeria-imagens galeria" id="galeria">
           <img src="./assets/img/tubarao.jpg" alt="Zoolito 1">
           <img src="./assets/img/ct01.png" alt="Zoolito 2">
           <img src="./assets/img/ct02.jpeg" alt="Zoolito 3">
@@ -172,6 +172,15 @@
           <img src="./assets/img/ct06.jpg" alt="Zoolito 3">
         </div>
       </section>
+
+      <div id="zoomModal" class="zoom-modal">
+        <span class="close">&times;</span>
+        <img alt="" class="zoom-modal-content" id="zoomImg">
+        <div class="nav-buttons">
+          <button class="nav-btn left" id="btnAnterior">&#10094;</button>
+          <button class="nav-btn right" id="btnProximo">&#10095;</button>
+        </div>
+      </div>
 
       <section class="carrossel-section">
         <h2>Visita à reserva técnica do Museu de Arqueologia e Etnologia da UFPR</h2>
@@ -340,64 +349,92 @@
       </section>
     </main>
 
-    
-
     <button id="btnTopo"><i class="fas fa-arrow-up"></i></button>
-    
 
-      <section id="galeria-zoolitos" class="section reveal-up">
-        <h2>Entrega dos Zoólitos para MAE</h2>
-        <div class="ent-galeria" id="galeria">
-          <img src="./assets/ent-zoo/img1.jpg" alt="Zoolito 1">
-          <img src="./assets/ent-zoo/img2.jpg" alt="Zoolito 2">
-          <img src="./assets/ent-zoo/img3.jpg" alt="Zoolito 3">
-          <img src="./assets/ent-zoo/img4.jpg" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img5.jpg" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img6.jpg" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img7.jpg" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img8.jpg" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img10.JPEG" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img11.JPEG" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img12.jpg" alt="Zoolito 4">
-          <img src="./assets/ent-zoo/img13.jpg" alt="Zoolito 4">
+    <section id="galeria-zoolitos" class="section reveal-up">
+      <h2>Entrega dos Zoólitos para MAE</h2>
+      <div class="ent-galeria galeria" id="galeria">
+        <img src="./assets/ent-zoo/img1.jpg" alt="Zoolito 1">
+        <img src="./assets/ent-zoo/img2.jpg" alt="Zoolito 2">
+        <img src="./assets/ent-zoo/img3.jpg" alt="Zoolito 3">
+        <img src="./assets/ent-zoo/img4.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img5.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img6.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img7.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img8.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img10.JPEG" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img11.JPEG" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img12.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img13.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img14.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img15.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img16.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img17.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img18.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img19.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img20.jpg" alt="Zoolito 4">
+        <img src="./assets/ent-zoo/img21.jpg" alt="Zoolito 4">
 
+      </div>
+    </section>
+
+    <div id="zoomModal" class="zoom-modal">
+        <span class="close">&times;</span>
+        <img alt="" class="zoom-modal-content" id="zoomImg">
+        <div class="nav-buttons">
+          <button class="nav-btn left" id="btnAnterior">&#10094;</button>
+          <button class="nav-btn right" id="btnProximo">&#10095;</button>
         </div>
-      </section>
+      </div>
 
-      <section id="projeto-video" class="section reveal-up">
-        <h2>Registro da Entrega</h2>
-        <div class="video-block">
-          <iframe width="800" height="500" src="https://youtu.be/1RW-MVMlXJs?si=3Nzk6adxxJKCxaPw"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
-        </div>
-      </section>
+    <section id="projeto-video" class="section reveal-up">
+      <h2>Registro da Entrega</h2>
+      <div class="video-block">
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/1RW-MVMlXJs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
 
-       <section id="galeria-zoolitos" class="section reveal-up">
-        <h2>Dinâmica Caminho da Vida</h2>
-        <div class="galeria-imagens">
-          <img src="./assets/cmvd/img1.JPG" alt="Zoolito 1">
-          <img src="./assets/cmvd/img2.JPG" alt="Zoolito 2">
-          <img src="./assets/cmvd/img3.JPG" alt="Zoolito 3">
-          <img src="./assets/cmvd/img4.JPG" alt="Zoolito 3">
-          <img src="./assets/cmvd/img5.JPG" alt="Zoolito 3">
-          <img src="./assets/cmvd/img6.JPG" alt="Zoolito 3">
-          <img src="./assets/cmvd/img7.JPG" alt="Zoolito 3">
-          <img src="./assets/cmvd/img8.JPG" alt="Zoolito 3">
-          <img src="./assets/cmvd/img9.JPG" alt="Zoolito 3">
-        </div>
-      </section>
 
-            <section id="projeto-video" class="section reveal-up">
-        <h2>Arte e Tecnologia 3D</h2>
-        <div class="video-block">
-          <iframe width="800" height="500" src="https://youtu.be/uNDYLakcxJk?si=yExctUzj8vtPIDQs"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
+
+    <section id="galeria-zoolitos" class="section reveal-up">
+      <h2>Dinâmica Caminho da Vida</h2>
+      <div class="galeria-imagens galeria" id="galeria">
+        <img src="./assets/cmvd/img1.JPG" alt="Zoolito 1">
+        <img src="./assets/cmvd/img2.JPG" alt="Zoolito 2">
+        <img src="./assets/cmvd/img3.JPG" alt="Zoolito 3">
+        <img src="./assets/cmvd/img4.JPG" alt="Zoolito 3">
+        <img src="./assets/cmvd/img5.JPG" alt="Zoolito 3">
+        <img src="./assets/cmvd/img6.JPG" alt="Zoolito 3">
+        <img src="./assets/cmvd/img7.JPG" alt="Zoolito 3">
+        <img src="./assets/cmvd/img8.JPG" alt="Zoolito 3">
+        <img src="./assets/cmvd/img9.JPG" alt="Zoolito 3">
+      </div>
+    </section>
+
+    <div id="zoomModal" class="zoom-modal">
+        <span class="close">&times;</span>
+        <img alt="" class="zoom-modal-content" id="zoomImg">
+        <div class="nav-buttons">
+          <button class="nav-btn left" id="btnAnterior">&#10094;</button>
+          <button class="nav-btn right" id="btnProximo">&#10095;</button>
         </div>
-      </section>
+      </div>
+
+    <section id="projeto-video" class="section reveal-up">
+      <h2>Arte e Tecnologia 3D</h2>
+      <div class="video-block">
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/uNDYLakcxJk" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
 
     <h2 class="titulo-creditos">Idealizadores</h2>
 
